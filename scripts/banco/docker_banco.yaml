@@ -1,0 +1,15 @@
+# Docker compose for postgres database
+version: '3.8'
+services:
+  banco:
+    image: postgres:16
+    container_name: banco_postgres
+    environment:
+      POSTGRES_PASSWORD: d71c515cbb14ffb1228eba2ecd98f2d1
+      POSTGRES_USER: tac
+    ports:
+      - "8080:5432"
+    volumes:
+      - banco:/var/lib/postgresql/data
+volumes:
+  banco:
