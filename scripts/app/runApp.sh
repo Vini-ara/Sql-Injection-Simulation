@@ -34,5 +34,5 @@ if sudo docker ps | grep -q app; then
   echo "Docker container is already running."
 else
   echo "Starting Docker container..."
-  sudo docker run -d -p 3000:80 appsqlinjection
+  sudo docker run -d -p 80:3000 appsqlinjection
 fi

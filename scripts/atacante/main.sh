@@ -4,20 +4,19 @@
 
 # Help function to display usage information.
 if [[ $1 == "--help" ]]; then
-  echo "Usage: $0 <remote_ip> <remote_user> <ssh_key_path> <attacking_endpoint>"
+  echo "Usage: $0 <remote_ip> <remote_user> <ssh_key_path>"
   exit 1
 fi
 
 # Get the remote server's IP address and username as variables.
-if [ -z "$1" ] || [ -z "$2" ] || [ -z "$3" ] || [ -z "$4" ] ; then
-  echo "Usage: $0 <remote_ip> <remote_user> <ssh_key_path> <attacking_endpoint>"
+if [ -z "$1" ] || [ -z "$2" ] || [ -z "$3" ]; then
+  echo "Usage: $0 <remote_ip> <remote_user> <ssh_key_path>"
   exit 1
 fi
 
 REMOTE_IP=$1
 REMOTE_USER=$2
 SSH_KEY_PATH=$3
-ATTACKING_ENDPOINT=$4
 
 SERVER_CONFIG_PATH=$(realpath "./serverConfig.sh")
 ATTACK_SCRIPT_PATH=$(realpath "./attack.sh")
