@@ -2,6 +2,13 @@
 
 This project simulates SQL Injection attacks and demonstrates detection and mitigation techniques using modern security tools. It is designed for educational and research purposes, providing a controlled environment to understand vulnerabilities, attack vectors, and defense mechanisms.
 
+<table>
+  <tr>
+    <td align="center"><a href="https://github.com/Vini-ara" target="_blank"><img style="border-radius: 50%;" src="https://github.com/Vini-ara.png" width="100px;" alt="Vinicius Araujo"/><br /><sub><b>Vinicius Araujo</b></sub></a><br /></td>
+    <td align="center"><a href="https://github.com/lucasdbr05" target="_blank"><img style="border-radius: 50%;" src="https://github.com/lucasdbr05.png" width="100px;" alt="Lucas Lima"/><br /><sub><b>Lucas Lima</b></sub></a><br /></td>
+</td>
+</table>
+
 ## Features
 - **Vulnerable Web Application**: Built with NestJS, exposing endpoints susceptible to SQL Injection.
 - **Database Setup**: SQL scripts for schema creation and seeding test data.
