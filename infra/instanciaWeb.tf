@@ -1,6 +1,6 @@
 resource "aws_instance" "webServer" {
-  ami           = "ami-03f6bd5a7e1b5824e"
-  instance_type = "t4g.micro"
+  ami           = "ami-05eb56e0befdb025f"
+  instance_type = "t3.micro"
   key_name      = aws_key_pair.chave_ssh.key_name
   subnet_id     = aws_subnet.bancoApi.id
   
